@@ -1,0 +1,297 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="appartamentipattimarinaApp" > <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="appartamentipattimarinaApp" > <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="appartamentipattimarinaApp" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="appartamentipattimarinaApp" > <!--<![endif]-->
+<head> 
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="Case vacanza, Appartamenti Vacanza Patti Marina, Mare fantastico e spiaggie libere. Offerte vantagiose a basso prezzo per famiglie gruppi organizzati e  ragazzi alla ricerca del divertimento">
+  <meta name="fragment" content="!">
+  <meta name="prerender-status-code" content="404">
+<meta name="prerender-status-code" content="302">
+<meta name="prerender-header" content="Location: http://www.google.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css({.tmp,app}) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
+  <!-- endbuild -->
+</head>
+<body data-status="{{ status }}" class="ng-cloak">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+
+
+
+
+
+      <div class="navbar-wrapper">
+        <div class="container">
+          <div class="navbar navbar-inverse navbar-static-top">
+
+            <div class="navbar-header"  >
+
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><i class="fa fa-home fa-1x"></i></a>
+
+
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+              <li><a href="/#!/vacanza"><i class="fa fa-picture-o fa-1x"></i> Foto</a></li>
+             <!-- <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="caret"></i> Dintorni </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Mare e Spiaggie</a></li>
+                  <li><a href="#">Isole Eolie</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Tindari Storia e Religione</a></li>
+                  <li><a href="#">Villa Romana</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Patti</a></li>
+                </ul>
+              </li>
+-->
+              <li><a href="/#!/tariffe"><i class="fa fa-money fa-1x"></i> Offerte Tariffe</a></li>
+              <li><a href="/#!/raggiungici"><i class="fa fa-map-marker fa-1x"></i> Ragiungici</a></li>
+              <li><a href="/#!/contatti"><i class="fa fa-comment-o fa-1x"></i> Contatti</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div><!-- /container -->
+    </div><!-- /navbar wrapper -->
+
+<!-- Carousel
+  ================================================== -->
+   <div  class="carousel slide"  ng-show="!showCaousel" >
+   </div>
+   
+  <div id="myCarousel" class="carousel slide" ng-show="showCaousel" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="" ></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="" ></li>
+      <li data-target="#myCarousel" data-slide-to="3" class="" ></li>
+      <li data-target="#myCarousel" data-slide-to="4" class="" ></li>
+      <li data-target="#myCarousel" data-slide-to="5" class="" ></li>
+      <li data-target="#myCarousel" data-slide-to="6" class="" ></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+     <div class="item active">
+      <img src="/images/slides/residence.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Appartamenti Patti Marina</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="/images/slides/piscina-notte.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Residence di Notte</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="/images/slides/golfo-patti.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Golfo di Patti</h1>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="item">
+      <img src="/images/slides/isole-eolie-marinello.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Riserva Naturale Marinello</h1>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="/images/slides/tindari-anfiteatro.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Anfiteatro Tindari </h1>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="item">
+      <img src="/images/slides/insenatura-calava.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Calavà </h1>
+        </div>
+      </div>
+    </div>
+
+
+    
+
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>  
+</div>
+<!-- /.carousel -->
+
+ 
+
+<!-- Add your site or application content here -->
+<div ng-view></div>
+<!-- FOOTER -->
+
+<hr class="featurette-divider">
+ <footer id="footer"  >
+
+ 
+
+<div class="row" >
+
+<div class="col-md-3 text-center">
+   <a class="btn" target="_blank"   href="https://www.google.it/maps/place/Via+Agliastri,+10/@38.149885,14.964258,17z/data=!3m1!4b1!4m2!3m1!1s0x13169cf56d0281cd:0xa6ed8fc3e1e9d03c">
+     <i class="fa fa-map-marker fa-4x"></i>
+     <h4>Via Agliastri 10, Patti, Me</h4>
+     <span>Indirizzo</span>
+   </a>
+ </div>
+
+<div class="col-md-3 text-center">
+      <a class="btn"  href="tel:+393280132900">
+    <i class="fa fa-mobile fa-4x"></i>
+    <h4>+39 328 0132900</h4>
+    <span>Telefono Cellulare</span>
+  </a>
+
+</div>
+
+<div class="col-md-3 text-center">
+    <a class="btn" href="tel:+390941361137">
+  <i class="fa fa-phone fa-4x"></i>
+  <h4>+39 0941 361137</h4>
+  <span>Telefono Fisso</span>
+</a>
+</div>
+
+<div class="col-md-3 text-center">
+  <a class="btn"  href="mailto:segreto.nicolo@gmail.com">
+    <i class="fa fa-envelope fa-4x"></i>
+    <h4>segreto.nicolo@gmail.com</h4>
+    <span>Email</span>
+  </a>
+</div>
+
+
+
+<div class="col-md-12 text-center">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Copyright © 2014  tindaro.tornabene@gmail.com
+</div>
+
+ 
+</div> 
+
+
+
+
+  
+</footer> 
+
+</div><!-- /.container -->
+
+
+
+
+
+
+
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-XXXXX-X');
+ ga('send', 'pageview');
+</script>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/sass-bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/controllers/vacanza.js"></script>
+<script src="scripts/controllers/tariffe.js"></script>
+<script src="scripts/controllers/raggiungici.js"></script>
+<script src="scripts/controllers/contatti.js"></script>
+<script src="scripts/controllers/mare-spiaggia.js"></script>
+<script src="scripts/controllers/tindari.js"></script>
+<script src="scripts/controllers/isole-eolie.js"></script>
+<script src="scripts/controllers/villa-romana.js"></script>
+<script src="scripts/controllers/comune-patti.js"></script>
+<script src="scripts/directives/angular-lazy.js"></script>
+<!-- endbuild -->
+</body>
+</html>
