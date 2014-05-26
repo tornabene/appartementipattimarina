@@ -236,16 +236,4 @@ margin-left: -30px;
 
 .blurred {
   -webkit-filter: blur(10px); }
-
-/* override default controls */
-.rn-carousel-control {
-    font-size:50px !important;
-    color:white;
-    opacity: 1;
-}
-.rn-carousel-control.rn-carousel-control-prev {
-    left: 5px;
-}
-.rn-carousel-control.rn-carousel-control-next {
-    right: 5px;
-}
+ 

@@ -12,5 +12,10 @@ angular.module('appartamentipattimarinaApp')
 	  {src: '/images/galleria/stanxa-da-letto.jpg', desc: 'Stanza da letto matrimoniale'},
 	  {src: '/images/galleria/terrazzo.jpg', desc: 'Terrazzo'}
   ];
-  $rootScope.status = 'ready';
+  
+  	$rootScope.status = 'ready';
+	$rootScope.title = 'Foto Appartamenti';
+	$rootScope.showCaousel = false;
+
+
 });

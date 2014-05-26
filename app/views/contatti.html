@@ -29,10 +29,12 @@
   </address>
     </div>
      </div>
+ 
 
   <div class="col-md-8"><h2>Richiesta informazioni</h2>
 
-    <form   action="test.php" role="form">
+<div class="alert alert-success" ng-show="success" ><i  class="fa fa-check-square-o fa-4x"> </i> Messaggio inviato con successo. Vi risponderemo al più presto.</div>
+    <form    ng-submit="send()" role="form" ng-show="!success" >
 
 
       <div class="form-group">

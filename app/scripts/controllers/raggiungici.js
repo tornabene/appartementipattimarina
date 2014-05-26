@@ -11,5 +11,8 @@ angular.module('appartamentipattimarinaApp')
 		zoom: 8
 	};
 
+	$rootScope.title = 'Mappa Appartamenti';
+	$rootScope.showCaousel = false;
+
 	$rootScope.status = 'ready';
 });

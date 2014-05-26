@@ -1,20 +1,33 @@
   <div class="container">
-      <h2>Foto Appartamenti</h2>
-      <!-- slider container -->
+    <h2>Foto Appartamenti</h2>
+    <!-- slider container -->
+
+
+
+
+
+    <div rn-carousel rn-carousel-buffered rn-carousel-indicator="true" rn-carousel-control="true" class="carousel slide"  >
+
+  
+      <div  ng-repeat="item in photos"  >
+      <div class="item" >
+
+       <div class="img loading" lazy-loading-class="loading" lazy-loaded-class="loaded" 
+       lazy-background="item.src">
        
+       <div class="container">
+     
+      <div class="caption">  <h2>{{ item.desc }}</h2></div>
+        
+       </div>
+      
+     </div>
 
- 
 
+</div>
+   </div>
 
-    <ul rn-carousel rn-carousel-buffered rn-carousel-indicator="true" rn-carousel-control="true" class="page-container"  ng-class="thumbs">
-        <li  ng-repeat="item in photos" ng-click="toggle(item)"  >
-           <div class="img loading" lazy-loading-class="loading" lazy-loaded-class="loaded" 
-              lazy-background="item.src">
-                <div class="caption">{{ item.desc }}</div>
-              </div>
-        </li>
-      </ul>
+ </div>
 
- 
 
 </div>
