@@ -42,14 +42,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><i class="fa fa-home fa-1x"></i> Appartamenti Patti Marina</a>
+            <a class="navbar-brand" href="/"><i class="fa fa-home fa-1x"></i></a>
 
 
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
 
-              <li><a href="#!/vacanza"><i class="fa fa-picture-o fa-1x"></i> Foto</a></li>
+              <li><a href="/#!/vacanza"><i class="fa fa-picture-o fa-1x"></i> Foto</a></li>
              <!-- <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="caret"></i> Dintorni </a>
                 <ul class="dropdown-menu">
@@ -63,9 +63,9 @@
                 </ul>
               </li>
 -->
-              <li><a href="#!/tariffe"><i class="fa fa-money fa-1x"></i> Offerte Tariffe</a></li>
-              <li><a href="#!/raggiungici"><i class="fa fa-map-marker fa-1x"></i> Ragiungici</a></li>
-              <li><a href="#!/contatti"><i class="fa fa-comment-o fa-1x"></i> Contatti</a></li>
+              <li><a href="/#!/tariffe"><i class="fa fa-money fa-1x"></i> Offerte Tariffe</a></li>
+              <li><a href="/#!/raggiungici"><i class="fa fa-map-marker fa-1x"></i> Ragiungici</a></li>
+              <li><a href="/#!/contatti"><i class="fa fa-comment-o fa-1x"></i> Contatti</a></li>
             </ul>
           </div>
 
@@ -75,7 +75,10 @@
 
 <!-- Carousel
   ================================================== -->
-  <div id="myCarousel" class="carousel slide">
+   <div class="carousel slide ng-hide" ng-show="!showCaousel">
+   </div>
+   
+  <div id="myCarousel" class="carousel slide" ng-show="showCaousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -90,20 +93,30 @@
     <div class="carousel-inner">
 
      <div class="item active">
-      <img src="/images/slides/residence.jpg" class="img-responsive">
+      <img src="/images/slides/gazebo.jpg" class="img-responsive">
       <div class="container">
         <div class="carousel-caption">
-          <h1>Residence</h1>
+          <h1>Appartamenti Patti Marina </h1>
+          <h2>Gazebo Solarium Piscina</h2>
         </div>
       </div>
     </div>
 
+     <div class="item">
+      <img src="/images/slides/residence.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Appartamenti Patti Marina</h1>
+          <h2>Il Residence</h2>
+        </div>
+      </div>
+    </div>
 
     <div class="item">
       <img src="/images/slides/piscina-notte.jpg" class="img-responsive">
       <div class="container">
         <div class="carousel-caption">
-          <h1>Residence di Notte</h1>
+          <h1>Residence notturno</h1>
         </div>
       </div>
     </div>
@@ -137,23 +150,7 @@
           <h1>Anfiteatro Tindari </h1>
         </div>
       </div>
-    </div>
-
-
-
-
-    <div class="item">
-      <img src="/images/slides/insenatura-calava.jpg" class="img-responsive">
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Calavà </h1>
-        </div>
-      </div>
-    </div>
-
-
-    
-
+    </div> 
   </div>
   <!-- Controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -164,28 +161,17 @@
   </a>  
 </div>
 <!-- /.carousel -->
-
-
-
-<!-- Add your site or application content here -->
-<!-- ngView:  --><div ng-view="" class="ng-scope ng-animate">
-<!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <div class="container ng-scope">
  
 
+<!-- Add your site or application content here -->
+<!-- ngView:  --><div ng-view="" class="ng-scope">  <div class="container ng-scope">
 
-    <!-- START THE FEATURETTES -->
-
-
-    <div class="featurette">
-    <img class="featurette-image img-circle pull-right" src="/images/comfort-vacanza-patti-mare.jpg">
-      <h2 class="featurette-heading">Casa Vacanza <span class="text-muted"><br>Nello splendido Golfo di Patti</span></h2>
+    <div class="featurette ">
+    <h2 class="featurette-heading">Casa Vacanza <span class="text-muted">Patti Marina</span><br><br><br></h2>
+      <img class="featurette-image img-circle pull-right" src="/images/comfort-vacanza-patti-mare.jpg">
       <p class="lead"> Gli appartamenti  fanno parte di una struttura di recente costruzione (2009) e sorgono a 350mt dal mare e dalla marina di Patti. 
-           </p>
-        <p class="lead">I  sette appartamenti sono tutti completamente arredati e dotati di aria condizionata, tv, cucine accessoriate, ampi terrazzi, da cui si gode una splendida vista sul golfo di Patti e sulle vicine isole Eolie .      </p>
+      </p>
+      <p class="lead">I  sette appartamenti sono tutti completamente arredati e dotati di aria condizionata, tv, cucine accessoriate, ampi terrazzi, da cui si gode una splendida vista sul golfo di Patti e sulle vicine isole Eolie .     </p>
     </div>
 
     <hr class="featurette-divider">
@@ -201,14 +187,16 @@
 
     <div class="featurette">
       <img class="featurette-image pull-right" src="/images/escursioni-patti-mare.jpg">
-      <h2 class="featurette-heading">Escursioni <span class="text-muted">Isole Eolie</span></h2>
-       <p class="lead">Si organizzano escursioni alle Isole Eolie a prezzi vantaggiosi per gli ospiti e, a richiesta  si prenotano  ombrelloni e sdraio a prezzi che si aggirano intorno a 10 euro per un ombrellone e due sdraio. 
-       </p>
-        <p class="lead">Patti inoltre offre ampie zone di spiagge sabbiose completamente libere.</p>
-    </div></div></div>
+      <h2 class="featurette-heading">Escursioni <span class="text-muted">Isole Eolie</span><br><br></h2>
+      <p class="lead">Si organizzano escursioni alle Isole Eolie a prezzi vantaggiosi per gli ospiti e, a richiesta  si prenotano  ombrelloni e sdraio a prezzi che si aggirano intorno a 10 euro per un ombrellone e due sdraio. 
+      </p>
+      <p class="lead">Patti inoltre offre ampie zone di spiagge sabbiose completamente libere.</p>
+    </div>
+
+  </div></div>
 <!-- FOOTER -->
 
-<hr class="featurette-divider">
+ <hr class="featurette-divider">
  <footer id="footer">
 
  
@@ -217,7 +205,7 @@
 
 <div class="col-md-3 text-center">
    <a class="btn" target="_blank" href="https://www.google.it/maps/place/Via+Agliastri,+10/@38.149885,14.964258,17z/data=!3m1!4b1!4m2!3m1!1s0x13169cf56d0281cd:0xa6ed8fc3e1e9d03c">
-     <i class="fa fa-map-marker fa-4x"></i>
+     <i class="fa fa-map-marker fa-3x"></i>
      <h4>Via Agliastri 10, Patti, Me</h4>
      <span>Indirizzo</span>
    </a>
@@ -225,7 +213,7 @@
 
 <div class="col-md-3 text-center">
       <a class="btn" href="tel:+393280132900">
-    <i class="fa fa-mobile fa-4x"></i>
+    <i class="fa fa-mobile fa-3x"></i>
     <h4>+39 328 0132900</h4>
     <span>Telefono Cellulare</span>
   </a>
@@ -234,7 +222,7 @@
 
 <div class="col-md-3 text-center">
     <a class="btn" href="tel:+390941361137">
-  <i class="fa fa-phone fa-4x"></i>
+  <i class="fa fa-phone fa-3x"></i>
   <h4>+39 0941 361137</h4>
   <span>Telefono Fisso</span>
 </a>
@@ -242,7 +230,7 @@
 
 <div class="col-md-3 text-center">
   <a class="btn" href="mailto:segreto.nicolo@gmail.com">
-    <i class="fa fa-envelope fa-4x"></i>
+    <i class="fa fa-envelope fa-3x"></i>
     <h4>segreto.nicolo@gmail.com</h4>
     <span>Email</span>
   </a>
@@ -257,7 +245,7 @@
 <br>
 <br>
 <br>
-Copyright © 2014  tindaro.tornabene@gmail.com
+Copyright © 2014  appartamentipattimarina.com
 </div>
 
  
@@ -321,6 +309,8 @@ Copyright © 2014  tindaro.tornabene@gmail.com
 <script src="scripts/controllers/villa-romana.js"></script>
 <script src="scripts/controllers/comune-patti.js"></script>
 <script src="scripts/directives/angular-lazy.js"></script>
+<script src="scripts/services/mailservice.js"></script>
+
 <!-- endbuild -->
 <!-- livereload script -->
 <script type="text/javascript">document.write('<script src="http://'
