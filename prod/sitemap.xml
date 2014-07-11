@@ -24,4 +24,32 @@
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+
+  <url>
+    <loc>http://www.appartamentipattimarina.com/main.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.appartamentipattimarina.com/vacanza.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.appartamentipattimarina.com/contatti.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.appartamentipattimarina.com/tariffe.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.appartamentipattimarina.com/raggiungici.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
 </urlset> 
