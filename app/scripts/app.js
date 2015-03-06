@@ -7,7 +7,9 @@ angular.module('appartamentipattimarinaApp', [
   'ngRoute',
   'ngAnimate',
   'ngTouch',
-  'angular-carousel'
+  'angular-carousel',
+  'angular-loading-bar',
+  'slick'
 ])
 .config(function ($routeProvider) {
   $routeProvider

@@ -18,12 +18,13 @@
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
   <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
+  <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
+  <link rel="stylesheet" href="bower_components/slick-carousel/slick/slick.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css({.tmp,app}) styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main.css"> 
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-
   <!-- endbuild -->
 </head>
 <body data-status="{{ status }}" class="ng-cloak">
@@ -33,50 +34,52 @@
 
 
 
+ 
+
+<span class="prerender-icon"></span> 
+<div class="navbar navbar-default navbar-fixed-top new ng-scope" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+  <!-- images/logo/patti1.png
+images/logo/patti1_neg.png
+images/logo/patti2.png
+images/logo/patti2_neg.png
+images/logo/patti3.png
+images/logo/patti3_neg.png
+images/logo/logo.jpg
+ -->
 
 
-      <div class="navbar-wrapper">
-        <div class="container">
-          <div class="navbar navbar-inverse navbar-static-top">
 
-            <div class="navbar-header"  >
+    <a class="navbar-brand" href="/">
 
-             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/"><i class="fa fa-home fa-1x"></i></a>
+    <img src="/images/logo/logopic.jpg" width="45" height="45" >
+ 
+   Appartamenti  Patti Marina</a>
+  </div>
 
-
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-
-              <li><a href="/#!/vacanza"><i class="fa fa-picture-o fa-1x"></i> Foto</a></li>
-             <!-- <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="caret"></i> Dintorni </a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Mare e Spiaggie</a></li>
-                  <li><a href="#">Isole Eolie</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Tindari Storia e Religione</a></li>
-                  <li><a href="#">Villa Romana</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Patti</a></li>
-                </ul>
-              </li>
--->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav navbar-right">
+         
+        <li><a href="/#!/vacanza"><i class="fa fa-picture-o fa-1x"></i> Foto</a></li>
+ 
               <li><a href="/#!/tariffe"><i class="fa fa-money fa-1x"></i> Offerte Tariffe</a></li>
               <li><a href="/#!/raggiungici"><i class="fa fa-map-marker fa-1x"></i> Raggiungici</a></li>
               <li><a href="/#!/contatti"><i class="fa fa-comment-o fa-1x"></i> Contatti</a></li>
-            </ul>
-          </div>
 
-        </div>
-      </div><!-- /container -->
-    </div><!-- /navbar wrapper -->
+    </ul>
+  </div>
+</div>
+</div>
+  
+ 
+    
 
 <!-- Carousel
   ================================================== -->
@@ -170,9 +173,9 @@
 
 <!-- Add your site or application content here -->
 <div ng-view></div>
-<!-- FOOTER -->
+ 
 
- <hr class="featurette-divider">
+
  <footer id="footer"  >
 
  
@@ -181,7 +184,7 @@
 
 <div class="col-md-3 text-center">
    <a class="btn" target="_blank"   href="https://www.google.it/maps/place/Via+Agliastri,+10/@38.149885,14.964258,17z/data=!3m1!4b1!4m2!3m1!1s0x13169cf56d0281cd:0xa6ed8fc3e1e9d03c">
-     <i class="fa fa-map-marker fa-3x"></i>
+     <i class="fa fa-map-marker fa-2x"></i>
      <h4>Via Agliastri 10, Patti, Me</h4>
      <span>Indirizzo</span>
    </a>
@@ -189,7 +192,7 @@
 
 <div class="col-md-3 text-center">
       <a class="btn"  href="tel:+393280132900">
-    <i class="fa fa-mobile fa-3x"></i>
+    <i class="fa fa-mobile fa-2x"></i>
     <h4>+39 328 0132900</h4>
     <span>Telefono Cellulare</span>
   </a>
@@ -198,7 +201,7 @@
 
 <div class="col-md-3 text-center">
     <a class="btn" href="tel:+390941361137">
-  <i class="fa fa-phone fa-3x"></i>
+  <i class="fa fa-phone fa-2x"></i>
   <h4>+39 0941 361137</h4>
   <span>Telefono Fisso</span>
 </a>
@@ -206,7 +209,7 @@
 
 <div class="col-md-3 text-center">
   <a class="btn"  href="mailto:segreto.nicolo@gmail.com">
-    <i class="fa fa-envelope fa-3x"></i>
+    <i class="fa fa-envelope fa-2x"></i>
     <h4>segreto.nicolo@gmail.com</h4>
     <span>Email</span>
   </a>
@@ -221,7 +224,7 @@
 <br>
 <br>
 <br>
-Copyright © 2014  appartamentipattimarina.com
+Copyright © 2015  appartamentipattimarina.com
 </div>
 
  
@@ -271,9 +274,12 @@ Copyright © 2014  appartamentipattimarina.com
 <script src="bower_components/angular-animate/angular-animate.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
 <script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
+<script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="bower_components/angular-slick/dist/slick.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
-
+  
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>

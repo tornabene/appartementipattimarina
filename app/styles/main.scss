@@ -5,13 +5,31 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 /* BOOTSTRAP 3.x GLOBAL STYLES
 -------------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web);
+
 body {
-padding-bottom: 40px;
-color: #5a5a5a;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+   color: #0C77B8; 
+  font-style: normal;
 }
 
+.myslick {
+    
+}
 
+.myslick > button {
+    width: 60px;
+    height: 60px;
+ 
+    font-size: 20px;
+    background-image: -webkit-gradient(linear,0 top,100% top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+    background-image: -webkit-linear-gradient(left,color-stop(rgba(0,0,0,.5) 0),color-stop(rgba(0,0,0,.0001) 100%));
+    background-image: -moz-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
 
+}
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -40,18 +58,18 @@ z-index: 10;
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-height: 400px;
+height: 200px;
 background-color:#555;
 }
 .carousel img {
 position: absolute;
 top: 0;
 left: 0;
-min-height: 400px;
+min-height: 200px;
 min-width: 100%;
 }
 
- .icon-next {
+.icon-next {
     width: 30px;
     height: 30px;
     margin-top: -15px;
@@ -147,6 +165,22 @@ font-size: 21px;
 line-height: 1.4;
 }
 
+
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+height: 400px;
+background-color:#555;
+}
+.carousel img {
+position: absolute;
+top: 0;
+left: 0;
+min-height: 400px;
+min-width: 100%;
+}
+
+
 }
 
 
@@ -157,19 +191,8 @@ line-height: 1.4;
 
 
 
-#footer {
-margin-top: 0px;
-position: relative;
-}
-
-#footer:before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-height: 280px;
-background: url(/images/footer.gif) repeat-x center bottom;
+#footer { 
+ background-color: #FFF;
 }
 
 
@@ -240,11 +263,32 @@ margin-left: -30px;
 .img.loaded {
   background-size: cover;
   background-position: center;
-  width:100%;
+  width:800;
     height:500px;
 
-   }
+ }
 
-.blurred {
-  -webkit-filter: blur(10px); }
+.appartamenti_logo{
  
+background:url(/images/logo/logopic.jpg) no-repeat;
+width:45px;
+height:45px;
+ 
+   
+    
+ 
+ 
+}
+
+
+
+
+
+/*
+images/logo/patti1.png
+images/logo/patti1_neg.png
+images/logo/patti2.png
+images/logo/patti2_neg.png
+images/logo/patti3.png
+images/logo/patti3_neg.png
+*/
