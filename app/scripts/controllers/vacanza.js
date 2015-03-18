@@ -22,6 +22,7 @@ angular.module('appartamentipattimarinaApp')
 		{src: '/images/galleria/gazebo.jpg', desc: 'Gazebo '},
 		{src: '/images/galleria/piscina.jpg', desc: 'Piscina'},
 		{src: '/images/galleria/residence.jpg', desc: 'Il residence'},
+		{src: '/images/galleria/18.png', desc: 'Il residence'},
 		{src: '/images/galleria/salone-cucina.jpg', desc: 'Salone cunina'},
 		{src: '/images/galleria/soggiorno.jpg', desc: 'Soggiorno'},
 		{src: '/images/galleria/stanxa-da-letto.jpg', desc: 'Stanza da letto'},
